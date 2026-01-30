@@ -18,7 +18,7 @@ build:
         - cmake -B build -G Ninja %CMAKE_ARGS% -DHDR_HISTOGRAM_BUILD_PROGRAMS=OFF -DHDR_HISTOGRAM_INSTALL_STATIC=OFF -DHDR_HISTOGRAM_INSTALL_SHARED=ON -DCMAKE_WINDOWS_EXPORT_ALL_SYMBOLS=ON .
     - cmake --build build
     - cmake --install build
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -28,7 +28,7 @@ requirements:
     - ninja
   host:
     - zlib
-  run_constraints:
+  run_exports:
     - ${{ pin_subpackage('hdrhistogram-c', upper_bound='x.x.x') }}
 
 tests:
