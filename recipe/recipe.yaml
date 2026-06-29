@@ -1,5 +1,5 @@
 context:
-  version: "0.11.9"
+  version: "0.11.10"
 
 package:
   name: hdrhistogram-c
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/HdrHistogram/HdrHistogram_c/archive/refs/tags/${{ version }}.tar.gz
-  sha256: 0eb5fdb9f1f8c4b9c6eb319502f8d9e28991afffb8418672a61741993855650e
+  sha256: c3b06d077e680d112abf9f027d8a558f1176ee4a55a7c523577833391d8c2249
 
 build:
   script:
@@ -18,7 +18,7 @@ build:
         - cmake -B build -G Ninja %CMAKE_ARGS% -DHDR_HISTOGRAM_BUILD_PROGRAMS=OFF -DHDR_HISTOGRAM_INSTALL_STATIC=OFF -DHDR_HISTOGRAM_INSTALL_SHARED=ON -DCMAKE_WINDOWS_EXPORT_ALL_SYMBOLS=ON .
     - cmake --build build
     - cmake --install build
-  number: 1
+  number: 0
 
 requirements:
   build:
