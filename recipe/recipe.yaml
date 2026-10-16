@@ -1,5 +1,5 @@
 context:
-  version: "0.12.0"
+  version: "0.12.1"
 
 package:
   name: hdrhistogram-c
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/HdrHistogram/HdrHistogram_c/archive/refs/tags/${{ version }}.tar.gz
-  sha256: 6bc54427b2e5c3639f08f13517a38deb242f8b97b44964d584834d44f02a0be1
+  sha256: b2cff564b49f900e7f951c95428100a4aed36561703237ffc5e41b4843d804ce
 
 build:
   script:
